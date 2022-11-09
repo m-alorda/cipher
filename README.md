@@ -1,10 +1,15 @@
 # Cipher
 
+## Description
+
+A project to cipher information according according to the cipher wheels of
+<https://www.osi.es/sites/default/files/docs/c9-pdf-rp-rueda-cifrado.pdf>
+
 ## Content
 
 - [Cipher](#cipher)
-  - [Content](#content)
   - [Description](#description)
+  - [Content](#content)
   - [Requirements](#requirements)
   - [Setup](#setup)
   - [Usage](#usage)
@@ -15,11 +20,6 @@
       - [Symbolic cipher](#symbolic-cipher-1)
       - [Caesar cipher](#caesar-cipher-1)
       - [Numeric cipher](#numeric-cipher-1)
-
-## Description
-
-A project to cipher information according according to the cipher wheels of
-<https://www.osi.es/sites/default/files/docs/c9-pdf-rp-rueda-cifrado.pdf>
 
 ## Requirements
 
@@ -104,19 +104,40 @@ $ ./cipher.py numeric 'abcdefghijklmnopqrstuvwzyz'
 ```
 
 ```console
-$ ./cipher.py numeric 'Lorem ipsum dolor sit amet, consectetur adipiscing
-elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-
-23 14 34 51 33   42 24 44 15 33   41 14 23 14 34   44 42 54   11 33 51 54 ,   31 14 43 44 51 31 54 51 54 15 34   11 41 42 24 42 44 31 42 43 22
-51 23 42 54 ,   44 51 41   41 14   51 42 15 44 33 14 41   54 51 33 24 14 34   42 43 31 42 41 42 41 15 43 54   15 54   23 11 21 14 34 51   51 54   41 14 23 14 34 51   33 11 22 43 11   11 23 42 13 15 11 .   15 54   51 43 42 33   11 41
-33 42 43 42 33   22 51 43 42 11 33 ,   13 15 42 44   43 14 44 54 34 15 41   51 35 51 34 31 42 54 11 54 42 14 43   15 23 23 11 33 31 14   23 11 21 14 34 42 44   43 42 44 42   15 54   11 23 42 13 15 42 24   51 35   51 11
-31 14 33 33 14 41 14   31 14 43 44 51 13 15 11 54 .   41 15 42 44   11 15 54 51   42 34 15 34 51   41 14 23 14 34   42 43   34 51 24 34 51 32 51 43 41 51 34 42 54   42 43   22 14 23 15 24 54 11 54 51   22 51 23 42 54   51 44 44 51
-31 42 23 23 15 33   41 14 23 14 34 51   51 15   12 15 22 42 11 54   43 15 23 23 11   24 11 34 42 11 54 15 34 .   51 35 31 51 24 54 51 15 34   44 42 43 54   14 31 31 11 51 31 11 54   31 15 24 42 41 11 54 11 54   43 14 43
-24 34 14 42 41 51 43 54 ,   44 15 43 54   42 43   31 15 23 24 11   13 15 42   14 12 12 42 31 42 11   41 51 44 51 34 15 43 54   33 14 23 23 42 54   11 43 42 33   42 41   51 44 54   23 11 21 14 34 15 33 .
+$ ./cipher.py numeric 'Lorem ipsum dolor sit
+amet consectetur adipiscing
+elit sed do eiusmod tempor
+incididunt ut labore et
+dolore magna aliqua Ut enim
+ad minim veniam quis nostrud
+exercitation ullamco laboris
+nisi ut aliquip ex ea commodo
+consequat Duis aute irure
+dolor in reprehenderit in
+voluptate velit esse cillum
+dolore eu fugiat nulla
+pariatur Excepteur sint
+occaecat cupidatat non
+proident sunt in culpa qui
+officia deserunt mollit anim
+id est laborum'
+23 14 34 51 33   42 24 44 15 33   41 14 23 14 34   44 42 54
+11 33 51 54   31 14 43 44 51 31 54 51 54 15 34   11 41 42 24 42 44 31 42 43 22
+51 23 42 54   44 51 41   41 14   51 42 15 44 33 14 41   54 51 33 24 14 34
+42 43 31 42 41 42 41 15 43 54   15 54   23 11 21 14 34 51   51 54
+41 14 23 14 34 51   33 11 22 43 11   11 23 42 13 15 11   15 54   51 43 42 33
+11 41   33 42 43 42 33   22 51 43 42 11 33   13 15 42 44   43 14 44 54 34 15 41
+51 35 51 34 31 42 54 11 54 42 14 43   15 23 23 11 33 31 14   23 11 21 14 34 42 44
+43 42 44 42   15 54   11 23 42 13 15 42 24   51 35   51 11   31 14 33 33 14 41 14
+31 14 43 44 51 13 15 11 54   41 15 42 44   11 15 54 51   42 34 15 34 51
+41 14 23 14 34   42 43   34 51 24 34 51 32 51 43 41 51 34 42 54   42 43
+22 14 23 15 24 54 11 54 51   22 51 23 42 54   51 44 44 51   31 42 23 23 15 33
+41 14 23 14 34 51   51 15   12 15 22 42 11 54   43 15 23 23 11
+24 11 34 42 11 54 15 34   51 35 31 51 24 54 51 15 34   44 42 43 54
+14 31 31 11 51 31 11 54   31 15 24 42 41 11 54 11 54   43 14 43
+24 34 14 42 41 51 43 54   44 15 43 54   42 43   31 15 23 24 11   13 15 42
+14 12 12 42 31 42 11   41 51 44 51 34 15 43 54   33 14 23 23 42 54   11 43 42 33
+42 41   51 44 54   23 11 21 14 34 15 33
 ```
 
 ### Help messages
