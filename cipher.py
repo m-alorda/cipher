@@ -101,7 +101,10 @@ class Cipher:
         def cipher(char: str) -> str:
             return NUMERIC_CYPHER_MAP.get(char.lower(), char)
 
-        return " ".join(cipher(char) for char in plain_text)
+        def cipher_line(line: str) -> str:
+            return " ".join(cipher(char) for char in line)
+
+        return "\n".join(cipher_line(line) for line in plain_text.split("\n"))
 
     def symbolic(
         self,
